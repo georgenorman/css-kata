@@ -1,0 +1,25 @@
+/*
+  ~ mainTabMenuRwd.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Main Menu Layout (specific to this app)
+  ~   move the main tab menu below the header title, for small screens (with a quick transition).
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/* move the main tab menu below the header title, for small screens (with a quick transition) */
+@media (max-width: 539px) {
+  #main-menu {
+    top: 30px;
+    left: -34px;
+  }
+
+  body > header {
+    padding: 1px 0 30px 0;
+    transition: padding-bottom 0.35s 0.0s;
+    -webkit-transition: padding-bottom 0.35s 0.0s;
+  }
+}

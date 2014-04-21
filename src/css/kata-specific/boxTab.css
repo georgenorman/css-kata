@@ -1,0 +1,47 @@
+/*
+  ~ boxTab.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Nested boxes, all centered, with text vertically and horizontally centered.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Outermost div with a gray background. */
+.outermost {
+  height: 220px; /* content height */
+  width: 220px; /* content width */
+  background: #ddd;
+}
+
+/*
+ * Middle div is displayed such that it's inset 10px from its parent.
+ */
+.middle {
+  margin: 10px;
+  padding: 30px;
+  height: 140px; /* content height */
+  width: 140px; /* content width */
+  position: absolute;
+}
+
+/*
+ * Innermost div (having a child section), that's inset 30px from its
+ * parent and has a 20px redish border.
+ */
+.innermost {
+  border: 20px solid RGBa(255, 0, 0, 0.5);
+}
+
+/*
+ * Content section of the innermost div. The text is centered vertically and horizontally.
+ */
+.innermost > section {
+  height: 100px; /* content height */
+  width: 100px; /* content width */
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+

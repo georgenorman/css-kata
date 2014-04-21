@@ -1,0 +1,40 @@
+/*
+  ~ genericContentTransitions.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Enable transitions between the tabs (e.g., Home, Box, Movies and About)
+  ~   Note: One content section must have class="visible-content" and
+  ~   all other content sections must have class="hidden-content" (where
+  ~   a content section means any section controlled by a tab). This is
+  ~   required so that all content sections will be initially stacked.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Show content and perform transition from previous tab's content */
+section.visible-content {
+  transition: opacity 0.5s 0.0s ease-in;
+  -webkit-transition: opacity 0.5s 0.0s ease-in;
+  width: 98% ! important; /* @-@:p0 HACK: Required to prevent scrollbar at bottom of page */
+  position: absolute; /* stack views for transitions */
+  z-index: 100; /* move to top, so it can receive user events */
+  opacity: 1; /* show this view */
+
+  /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property */
+  height: auto;
+}
+
+/* Hide content and perform transition from this tab's content to the next */
+section.hidden-content {
+  transition: opacity 0.5s 0.0s ease-out;
+  -webkit-transition: opacity 0.5s 0.0s ease-out;
+  width: 98% ! important; /* @-@:p0 HACK: Required to prevent scrollbar at bottom of page */
+  position: absolute; /* stack views for transitions */
+  z-index: -1; /* move down, so it doesn't affect events meant for current active view */
+  opacity: 0; /* hide this view (transparent, but can still receive events if it's' on top) */
+
+  /* http://stackoverflow.com/questions/3331353/transitions-on-the-display-property */
+  height: 0;
+  overflow: hidden;
+}

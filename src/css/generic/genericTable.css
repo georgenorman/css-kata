@@ -1,0 +1,46 @@
+/*
+  ~ genericTable.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Generic table styling (dark header, zebra stripes, etc)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Set header text color to white and background to gray */
+.simple-table th {
+  color: #fff;
+  background-color: #656565;
+}
+
+/*
+ * Add white vertical separators to the header, starting at column #2
+ * (avoiding the left table border)
+ */
+.simple-table tr > th:nth-child(n+2) {
+  border-left: 1px solid #fff;
+}
+
+/* Add gray vertical separators to each cell of the table body */
+.simple-table tr > td {
+  border-left: 1px solid #ccc;
+}
+
+/* Add zebra-stripes to table body */
+.simple-table tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+/* Add padding to the header and body cells */
+.simple-table th,
+.simple-table td {
+  padding: 4px;
+}
+
+/* Collapse the space and borders between the cells */
+.simple-table {
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+}
+

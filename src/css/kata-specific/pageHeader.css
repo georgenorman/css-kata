@@ -1,0 +1,42 @@
+/*
+  ~ pageHeader.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Page Header (specific to this app)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/*
+ * Use margin to push the main content away from the header; provide a thin border at
+ * the bottom; set the padding to fill the entire header
+ */
+body > header {
+  margin: 0 -8px 12px -8px; /* push the main content down, away from the header */
+  border-bottom: thin solid #999;
+  padding: 1px 0 0 0;
+  background-color: #555;
+}
+
+/* Style the header text */
+body > header h1 {
+  color: #fff;
+  font-family: 'Happy Monkey', cursive;
+}
+
+/* Add a header icon */
+body > header h1 i:after {
+  content: "\2666";
+  font-style: normal;
+  font-size: 24px;
+  color: #069459;
+  margin-right: 4px;
+  line-height: 10px; /* keep it smaller than header text, to prevent tab mess */
+}
+
+/* Adjust the margin around the page title to align with the tab-menu bar */
+body > header > h1 {
+  margin: 12px 0 12px 8px;
+}

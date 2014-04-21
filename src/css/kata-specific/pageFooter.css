@@ -1,0 +1,20 @@
+/*
+  ~ pageFooter.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Footer
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 1px 1px 1px 10px;
+  margin-top: 430px;
+  background-color: #555;
+}
+

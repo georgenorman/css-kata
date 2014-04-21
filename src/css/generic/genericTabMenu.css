@@ -1,0 +1,82 @@
+/*
+  ~ genericTabMenu.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Generic tab menu
+  ~  Multiple tab menus on the same page must be supported.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Remove bullets from unordered list; center tab text */
+.tab-menu > ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+/*
+ * Adjust margin top to align menubar with header bottom;
+ * adjust margin left, to provide space between tabs;
+ * add some padding inside tabs; float left for horizontal menu
+ */
+.tab-menu > ul > li {
+  margin-left: 2px;
+  float: left;
+  background-color: #068894;
+}
+
+/* Change background color; change cursor to pointer */
+.tab-menu > ul > li:hover {
+  background-color: #EBAF3C;
+  cursor: pointer;
+}
+
+/*
+ * Set link text to white; set display to block to enable vertical padding and make
+ * the entire area the click target
+ */
+.tab-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 6px;
+}
+
+/*
+ * Set the active tab text color to dark; set background to white; provide a gray
+ * border around the tab; erase the border at the bottom of the tab.
+ */
+.tab-menu .active {
+  color: #555;
+  background-color: #fff;
+  border: thin solid #999;
+  border-bottom-color: #fff;
+  font-weight: bold;
+}
+
+/* Remove link styles for selected tab */
+.tab-menu .active a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  cursor: default;
+}
+
+/* No hover for the active tab (e.g., default cursor, no background change) */
+.tab-menu > ul > li.active:hover {
+  background-color: #fff;
+  cursor: default;
+}
+
+/* Make the first tab have a round corner */
+.tab-menu > ul > li:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+/* Clear floats so content after the tab menu does not float too. */
+.tab-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2014 George Norman.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+<html>
+  <head>
+    <title>CSS Kata Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      @import url("http://fonts.googleapis.com/css?family=Gudea|Happy+Monkey");
+    </style>
+    <script>
+      // Temp hack to workaround Webkit issue (or a deployment issue): https://code.google.com/p/chromium/issues/detail?id=246875
+      // By default, include the css; however, if any query string is present, then use practice version.
+      if (window.location.search === '') { // search returns the query portion of a URL (including the question mark)
+        var v = new Date().getTime(); // HACK! Force browser to reload CSS on page refresh, to avoid corrupted page (happens on most iOS devices)
+        document.write("<link rel=\"stylesheet\" href=\"./css/all-css.css?v=" + v + "\" type=\"text/css\" />");
+      } else {
+        document.write("<link rel=\"stylesheet\" href=\"./css-practice/csskata-practice.css?v=" + "\" type=\"text/css\" />");
+      }
+    </script>
+  </head>
+  <body onload="cssKataBaseModule.handleStarRatings();">
+    <!-- Page Header -->
+    <header>
+      <h1><i></i>CSS Kata</h1>
+      <nav id="main-menu" class="tab-menu">
+        <ul>
+          <li class="active"><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Home</a></li>
+          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Box</a></li>
+          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Movies</a></li>
+          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Corner Ribbon -->
+    <div class="ribbon-box right">
+      <div class="ribbon green">
+        <em>Corner Ribbon</em>
+      </div>
+    </div>
+
+    <!-- Alert - modal dialog -->
+    <div id="alert" class="modal-overlay dialog">
+      <div>
+        <header>Alert <a href="#" title="Close" onclick="genericSupportModule.hideAlert(); return false;">X</a></header>
+        <p>*This will be replaced*</p>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <main>
+      <!-- Home tab -->
+      <section id="home" class="visible-content">
+        <section id="sidebar">
+          <nav class="side-menu">
+            <ul>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item1</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item2</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item3</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item4</a>
+            </ul>
+          </nav>
+
+          <nav class="side-menu">
+            <ul>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemA</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemB</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemC</a>
+              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemD</a>
+            </ul>
+          </nav>
+        </section>
+
+        <section id="loremIpsum">
+          <h2>Lorem Ipsum Away</h2>
+          <p>
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          <p>
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          <p>
+          Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
+          One day however, a Small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+        </section>
+
+        <section id="superfluous">This is some text at the bottom of the home tab section, to ensure that the floats are cleared.</section>
+      </section>
+
+      <!-- Box tab -->
+      <section id="box" class="hidden-content">
+        <p>The content text and nested boxes are all vertically and horizontally centered.</p>
+        <div class="outermost">
+          <div class="middle grid">
+            <div class="innermost">
+              <section>
+                CONTENT<br>100px x 100px
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Movies tab -->
+      <section id="movies" class="hidden-content">
+        <p>This text will not scroll, but the table will.</p>
+        <div id="movieTableWrapper">
+        <table class="simple-table">
+          <tr><th>Title</th><th>Director</th><th>Box Office</th><th>Rating</th></tr>
+          <tr><td>The Avengers</td><td>Joss Whedon</td><td>$1,511,757,910</td><td><i data-rating="stars-3-5"></i></td></tr>
+          <tr><td>At World's End</td><td>Gore Verbinski</td><td>$963,420,425</td><td><i data-rating="stars-1-5"></i></td></tr>
+          <tr><td>Inception</td><td>Christopher Nolan</td><td>$825,532,764</td><td><i data-rating="stars-5-5"></i></td></tr>
+          <tr><td>The Matrix Reloaded</td><td>The Wachowskis</td><td>$742,128,461</td><td><i data-rating="stars-2-5"></i></td></tr>
+          <tr><td>Ghost Protocol</td><td>Andre Nemec</td><td>$694,713,380</td><td><i data-rating="stars-4-5"></i></td></tr>
+          <tr><td>The Curse of the Black Pearl</td><td>Gore Verbinski</td><td>$654,264,015</td><td><i data-rating="stars-5-5"></i></td></tr>
+          <tr><td>Oz the Great and Powerful</td><td>Sam Raimi</td><td>$493,311,825</td><td><i data-rating="stars-2-5"></i></td></tr>
+          <tr><td>Insomnia</td><td>Christopher Nolan</td><td>$113,714,830</td><td><i data-rating="stars-5-5"></i></td></tr>
+        </table>
+        </div>
+      </section>
+
+      <!-- About tab -->
+      <section id="about" class="hidden-content">
+        <p>A simple HTML page used to practice some CSS styling.</p>
+      </section>
+    </main>
+
+    <!-- Page footer -->
+    <br/>
+    <footer><p>CSS Kata Footer</p></footer>
+
+    <script type="text/javascript" src="./js/all-javascript.js"></script>
+  </body>
+</html>

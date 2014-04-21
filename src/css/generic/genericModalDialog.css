@@ -1,0 +1,86 @@
+/*
+  ~ genericModalDialog.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Generic modal dialog
+  ~   Write the CSS for a simple modal dialog, using the element with
+  ~   id="alert", in the practice template.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/*
+ * Cover the entire screen, to prevent mouse clicks on the main content region
+ * as well as to partially obscure it.
+ */
+.modal-overlay {
+  position: fixed; /* keep the overlay in same position, if the user scrolls the page */
+  top: 0; /* cover the entire window content area */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9000; /* make the overlay the topmost element */
+  background: RGBa(100, 100, 100, 0.8); /* make it gray and semi-opaque */
+  display: none; /* initially hide the overlay */
+}
+
+/* Provide an area, on top of the modal-overlay, to display the dialog. */
+.modal-overlay.dialog > div {
+  position: relative; /* position relative, to enable auto centering */
+  margin: 10% auto; /* add some space at the top and automatically center the dialog horizontally */
+  border: 1px solid #999;
+  border-radius: 16px 0 12px 12px; /* make top-left the same or greater than the header */
+  min-height: 150px;
+  max-width: 300px;
+  background: linear-gradient(0deg, #bbb, #fff);
+  background: -moz-linear-gradient(90deg, #bbb, #fff);
+  box-shadow: 12px 12px 16px #444;
+}
+
+/* A simple header area for the Title and close box. */
+.modal-overlay.dialog > div > header {
+  border-top-left-radius: 14px; /* make this be less than the modal dialog (parent) */
+  padding: 6px;
+  text-align: left;
+  color: #fff;
+  background: #555;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* An icon before the header text */
+.modal-overlay.dialog > div > header::before {
+  content: "\2756";
+  padding-left:6px;
+  padding-right:6px;
+  color: #aaa;
+  font-size: larger;
+}
+
+/* A simple close "box" (that's actually a circle). */
+.modal-overlay.dialog > div > header > a {
+  position: absolute;
+  border: 2px solid #ccc;
+  border-radius: 12px; /* make a round border around the X */
+  padding: 2px 6px 2px 6px; /* make the border a circle */
+  color: #eee;
+  background: #777;
+  font-weight: bold;
+  font-size: smaller;
+  text-decoration: none; /* remove the underline from the anchor */
+  top: -8px; /* absolutely position the close "box" in the upper right-hand corner of the header */
+  right: -12px;
+  box-shadow: 6px 6px 8px #444;
+}
+
+/* Highlight the close box on mouse over. */
+.modal-overlay.dialog > div > header > a:hover {
+  color: #777;
+  background: #eee;
+}
+
+/* Modal dialog message area */
+.modal-overlay.dialog > div > p {
+  padding: 10px;
+}

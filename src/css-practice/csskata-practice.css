@@ -1,0 +1,46 @@
+/*
+  ~ csskata-practice.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ --------------------------------------------------------------
+  ~ All CSS files used by 'CSS Lab' for practice.
+  ~ --------------------------------------------------------------
+*/
+
+/* Base CSS (common to many projects) */
+@import "../css/base.css";
+
+/* Ribbon */
+@import "generic/genericTopCornerRibbon.css";
+
+/* Tab menu */
+@import "generic/genericTabMenu.css";
+@import "kata-specific/mainTabMenu.css";
+
+/* Header and Footer */
+@import "kata-specific/pageHeader.css";
+@import "kata-specific/pageFooter.css";
+
+/* Content areas (home, box, movies, about) */
+@import "generic/genericContentTransitions.css";
+
+/* Home tab */
+@import "generic/genericVerticalMenu.css";
+@import "generic/genericModalDialog.css";
+@import "kata-specific/homeTab.css";
+
+/* Box tab */
+@import "kata-specific/boxTab.css";
+
+/* Movies tab */
+@import "generic/genericTable.css";
+@import "kata-specific/moviesTab.css";
+
+/* Patterns */
+@import "generic/genericPattern.css";
+
+/* Responsive (ugh; last) */
+@import "kata-specific/mainTabMenuRwd.css";
+@import "kata-specific/pageFooterRwd.css";

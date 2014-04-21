@@ -1,0 +1,27 @@
+/*
+  ~ mainTabMenu.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Main Menu Layout (specific to this app)
+  ~   position the main tab menu to the top of the page and nudge it to the right to make room for the Title.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/*
+ * Position the main tab menu to the top of the page and nudge it to the right to
+ * make room for the Title and corner ribbon.
+ */
+#main-menu {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+/* Make all the header tabs the same width */
+#main-menu > ul > li {
+  width: 60px;
+}
+

@@ -1,0 +1,40 @@
+/*
+  ~ genericVerticalMenu.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Generic vertical link menu
+  ~   Write the CSS for a simple vertical link menu, using the <nav class="side-menu">
+  ~   element in the practice template.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Remove bullets and padding from unordered list */
+.side-menu > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Set background color; add thin margin as item separators */
+.side-menu > ul > li {
+  background-color: #068894;
+  margin: 1px;
+}
+
+/* Change background color on mouse over; change cursor to pointer */
+.side-menu > ul > li:hover {
+  background-color: #EBAF3C;
+  cursor: pointer;
+}
+
+/*
+ * Set link text to white; set display to block to enable vertical padding and make
+ * the entire area the click target
+ */
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 6px;
+}

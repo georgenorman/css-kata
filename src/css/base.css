@@ -1,0 +1,44 @@
+/*
+  ~ base.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Global Generic Styles
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/* http://stackoverflow.com/questions/2710764/preserve-html-font-size-when-iphone-orientation-changes-from-portrait-to-landsca */
+html {
+  -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
+
+/* Same css for every page */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: smaller;
+  line-height: 18px;
+  color: #333;
+  background-color: #fff;
+  margin-top: 0;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Genesis: http://lea.verou.me/css3patterns/#blueprint-grid. */
+.grid {
+  background-color: #6ad;
+  background-image:
+    linear-gradient(#fff 2px, transparent 2px),
+    linear-gradient(90deg, #fff 2px, transparent 2px),
+    linear-gradient(rgba(255, 255, 255, .6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .6) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  padding:0;
+  margin:0;
+}

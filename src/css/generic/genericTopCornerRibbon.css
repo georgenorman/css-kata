@@ -1,0 +1,79 @@
+/*
+  ~ genericTopCornerRibbon.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Top left or right corner ribbon with red or green background.
+  ~   Write the CSS to add a ribbon to the upper-right page corner using the
+  ~   <div class="ribbon right green"> element in the practice template.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Provide a box that clips the ribbon (to prevent scrollbars) and allows click-thru */
+.ribbon-box {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  overflow: hidden; /* clip to prevent scroll bar */
+  pointer-events: none; /* allow elements under the ribbon to be clicked */
+}
+
+/* Position box to the right */
+.ribbon-box.right {
+  right: 0;
+}
+
+/* Position box to the left */
+.ribbon-box.left {
+  left: 0;
+}
+
+/* Provide 2px padding for two horizontal stripes */
+.ribbon {
+  padding: 2px 0;
+  width: 130px;
+}
+
+/*
+ * Display <em> as block (so text-align, padding, etc will work);
+ * set stripe color to #fff; provide some padding; center the text.
+ */
+.ribbon em {
+  display: block;
+  border: 1px solid #eee;
+  padding: 3px;
+  text-align: center;
+  font-family: 'Gudea', sans-serif;
+  color: #fff;
+}
+
+/* Position ribbon on left and rotate-left by 45-deg */
+.ribbon-box.left .ribbon {
+  position: absolute;
+  top: 18px;
+  left: -30px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Position ribbon on right and rotate-right by 45-deg */
+.ribbon-box.right .ribbon {
+  position: absolute;
+  top: 18px;
+  right: -30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Red ribbon */
+.ribbon.red {
+  background-color: #900;
+}
+
+/* Green ribbon */
+.ribbon.green {
+  background-color: #090;
+}
+

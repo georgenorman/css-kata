@@ -1,0 +1,11 @@
+/*
+  ~ pageFooterRwd.css v1.0.0
+  ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Footer RWD
+  ~   When the window is short, don't stick the footer on the bottom of the window
+  ~   (it eats up too much of the limited vertical space); but, when the window is
+  ~   tall, do stick the footer on the bottom of the window.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+

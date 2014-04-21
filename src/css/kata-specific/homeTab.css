@@ -1,0 +1,34 @@
+/*
+  ~ homeTab.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Arrange the Home tab content: sidebar on left, loremIpsum on the right
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/* Left or right sidebar (depending on html order) */
+#sidebar {
+  width: 19%;
+  float: left;
+}
+
+/* Left or right content (depending on html order) */
+#loremIpsum {
+  width: 78%;
+  float: right;
+  padding-right:3px;
+}
+
+/* Clear the previous floats */
+#superfluous {
+  clear: both;
+}
+
+/* Write the CSS to add a green checkmark to the first paragraph in the main section (after the <h2>). */
+#loremIpsum > p:nth-child(2):before {
+  content: "\2714";
+  color: #369968;
+}

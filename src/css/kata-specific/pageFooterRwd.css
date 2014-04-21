@@ -1,0 +1,25 @@
+/*
+  ~ pageFooterRwd.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Footer RWD
+  ~   When the window is short, don't stick the footer on the bottom of the window
+  ~   (it eats up too much of the limited vertical space); but, when the window is
+  ~   tall, do stick the footer on the bottom of the window.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+@media (min-height: 580px) {
+  footer {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 540px) {
+  footer {
+    margin-top: 460px;
+  }
+}
+

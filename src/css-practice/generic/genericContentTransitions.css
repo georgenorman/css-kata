@@ -1,0 +1,13 @@
+/*
+  ~ genericContentTransitions.css v1.0.0
+  ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Enable transitions between the tabs (e.g., Home, Box, Movies and About)
+  ~   Note: One content section must have class="visible-content" and
+  ~   all other content sections must have class="hidden-content" (where
+  ~   a content section means any section controlled by a tab). This is
+  ~   required so that all content sections will be initially stacked.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+

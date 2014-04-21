@@ -1,0 +1,32 @@
+/*
+  ~ moviesTab.css v1.0.0
+  ~ Copyright (c) 2014 George Norman.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Movie table styling (specify width, right-justify numbers, center justify icons, etc)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Stretch the table to force a need to center the 'Rating' column */
+#movieTableWrapper table {
+  width: 600px;
+}
+
+/* Right-justify the 'Box Office' column */
+#movieTableWrapper tr > td:nth-child(3) {
+  text-align: right;
+}
+
+/* Center-justify 'Rating' column */
+#movieTableWrapper tr > td:nth-child(4) {
+  text-align: center;
+}
+
+/* Add horizontal scrollbars to the Movies table for small screens */
+@media (max-width: 620px) {
+  #movieTableWrapper {
+    overflow: scroll;
+  }
+}
+
