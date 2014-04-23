@@ -32,7 +32,7 @@
   border: 1px solid #999;
   border-radius: 16px 0 12px 12px; /* make top-left the same or greater than the header */
   min-height: 150px;
-  max-width: 300px;
+  max-width: 280px;
   background: linear-gradient(0deg, #bbb, #fff);
   background: -moz-linear-gradient(90deg, #bbb, #fff);
   box-shadow: 12px 12px 16px #444;

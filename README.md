@@ -203,7 +203,7 @@ See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/m
 
 * Move the main tab menu below the header title when the browser size is less than 539px (for small screens). Use a a quick transition (e.g., 0.35 seconds).
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageHeaderLayout.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/mainTabMenuRwd.png)
 
 See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenuRwd.css) for  current solution.
 
@@ -212,7 +212,7 @@ See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/
 Attach the footer to the bottom of the *window*, when the browser is sized to 580px or more.
 Attach it to the bottom of the *document*, when sized to more than 580px (to maximize the available content space on small screens).
 
-![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageFooterLayout.png)
+![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageFooterRwd.png)
 
 See [kata-specific/pageFooterRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooterRwd.css) for  current solution.
 
