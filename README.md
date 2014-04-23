@@ -64,7 +64,7 @@ See [generic/genericTopCornerRibbon.css](https://github.com/georgenorman/css-kat
 
 ## Tab menu
 
-### Generic Tab Menu
+### ‣ Generic Tab Menu
 
 Write the CSS for a generic tab menu that can be used multiple times in the same page (targeting any element with the `tab-menu` class).
 
@@ -77,7 +77,7 @@ Write the CSS for a generic tab menu that can be used multiple times in the same
 
 See [generic/genericTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTabMenu.css) for  current solution.
 
-### Custom Main Tab Menu
+### ‣ Custom Main Tab Menu
 
 Write the CSS to position the main tab menu at the top of the page (use element with `id="main-menu"`).
 
@@ -90,7 +90,7 @@ See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blo
 
 ## Header and Footer
 
-### Custom Page Header
+### ‣ Custom Page Header
 
 * Push the main content down, slightly, away from the header.
 * Add a header "icon" using a font (e.g., unicode "\2666") and set its color to #069459.
@@ -99,7 +99,7 @@ See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blo
 
 See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageHeader.css) for  current solution.
 
-### Custom Page Footer
+### ‣ Custom Page Footer
 
 Attach the footer to the bottom of the window. Note: The current solution isn't implemented generically.
 
@@ -119,7 +119,7 @@ See [generic/genericContentTransitions.css](https://github.com/georgenorman/css-
 
 ## Custom Home Tab Content
 
-### Generic Vertical Side Menu
+### ‣ Generic Vertical Side Menu
 
 Write the CSS for a generic vertical menu that can be used multiple times in the same page
 (target any element using the '<nav class="side-menu">' element in the practice template):
@@ -132,7 +132,7 @@ Write the CSS for a generic vertical menu that can be used multiple times in the
 
 See [generic/genericVerticalMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericVerticalMenu.css) for  current solution.
 
-### Generic Modal Dialog
+### ‣ Generic Modal Dialog
 
 Write the CSS for a simple modal dialog, using the element with `id="alert"`, in the practice template.
 
@@ -140,7 +140,7 @@ Write the CSS for a simple modal dialog, using the element with `id="alert"`, in
 
 See [generic/genericModalDialog.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericModalDialog.css) for  current solution.
 
-### Arrange Home Tab Content
+### ‣ Arrange Home Tab Content
 
 Arrange the Home tab content: sidebar on left, loremIpsum on the right.
 
@@ -158,7 +158,7 @@ See [kata-specific/boxTab.css](https://github.com/georgenorman/css-kata/blob/mas
 
 ## Movies tab
 
-### Generic Table Styling
+### ‣ Generic Table Styling
 
 Write the CSS to style any table with a class name of `simple-table` (see the `<div id="movies">` element in the practice template).
 Don't add any non-generic CSS to the table (e.g., column alignment or table width - those would be specific to a particular table and are addressed by a later question).
@@ -171,7 +171,7 @@ Notice how the text of some columns will wrap if the browser width is made too s
 
 See [generic/genericTable.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTable.css) for  current solution.
 
-### Custom Movies Table
+### ‣ Custom Movies Table
 
 Write CSS to specifically style the table inside the `<div id="movies">` element in the practice template.
 This CSS will only be appropriate to this table and can't be reused.
@@ -199,7 +199,7 @@ See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/m
 
 ## Responsive
 
-### Main Tab Menu
+### ‣ Main Tab Menu
 
 * Move the main tab menu below the header title when the browser size is less than 539px (for small screens). Use a a quick transition (e.g., 0.35 seconds).
 
@@ -207,7 +207,7 @@ See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/m
 
 See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenuRwd.css) for  current solution.
 
-### Footer
+### ‣ Footer
 
 Attach the footer to the bottom of the *window*, when the browser is sized to 580px or more.
 Attach it to the bottom of the *document*, when sized to more than 580px (to maximize the available content space on small screens).
