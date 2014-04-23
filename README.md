@@ -122,7 +122,7 @@ See [generic/genericContentTransitions.css](https://github.com/georgenorman/css-
 ### ‣ Generic Vertical Side Menu
 
 Write the CSS for a generic vertical menu that can be used multiple times in the same page
-(target any element using the '<nav class="side-menu">' element in the practice template):
+(target any element using the `<nav class="side-menu">` element in the practice template):
 
 * Use color #068894 for background.
 * Use color #EBAF3C for highlight (on hover).
