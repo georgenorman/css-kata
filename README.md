@@ -58,7 +58,7 @@ Write the CSS to add a ribbon, using the `<div class="ribbon-box">` element in t
 * Ensure that the browser does not add a horizontal scrollbar.
 * Ensure that elements beneath the ribbon's region, receive mouse events (e.g., any part of the tab menu covered by the ribbon, must receive hover as well as click events).
 
-![Generic Top Corner Ribbon](https://github.com/georgenorman/css-kata/raw/master/doc/img/topCornerRibbon-right.png)
+![Generic Top Corner Ribbon](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericTopCornerRibbon.png)
 
 See [generic/genericTopCornerRibbon.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTopCornerRibbon.css) for  current solution.
 
@@ -84,7 +84,7 @@ Write the CSS to position the main tab menu at the top of the page (use element 
 * Move the main tab menu to the top of the page and nudge it to the right, to make room for the header's Title.
 * Make all header tabs the same width.
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageHeaderLayout.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_mainTabMenu.png)
 
 See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenu.css) for  current solution.
 
@@ -95,7 +95,7 @@ See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blo
 * Push the main content down, slightly, away from the header.
 * Add a header "icon" using a font (e.g., unicode "\2666") and set its color to #069459.
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageHeaderLayout.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_pageHeader.png)
 
 See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageHeader.css) for  current solution.
 
@@ -103,7 +103,7 @@ See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob
 
 Attach the footer to the bottom of the window. Note: The current solution isn't implemented generically.
 
-![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageFooterLayout.png)
+![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_pageFooter.png)
 
 See [kata-specific/pageFooter.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooter.css) for  current solution.
 
