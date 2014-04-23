@@ -69,7 +69,7 @@ See [generic/genericTopCornerRibbon.css](https://github.com/georgenorman/css-kat
 Write the CSS for a generic tab menu that can be used multiple times in the same page (targeting any element with the `tab-menu` class).
 
 * Make sure the entire tab area is a click-target (not just the tab's anchor).
-* Set the tab hover color to #EBAF3C.
+* Set the tab hover color to #ebaf3c.
 * Set the active tab's text color to #555 and its background color to #fff.
 * Give the first tab a round corner.
 
@@ -125,7 +125,7 @@ Write the CSS for a generic vertical menu that can be used multiple times in the
 (target any element using the `<nav class="side-menu">` element in the practice template):
 
 * Use color #068894 for background.
-* Use color #EBAF3C for highlight (on hover).
+* Use color #ebaf3c for highlight (on hover).
 * Make sure the entire tab area is a click-target (not just the item's anchor).
 
 ![Generic Vertical Menu](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericVerticalMenu.png)

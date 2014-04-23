@@ -28,7 +28,7 @@
 
 /* Change background color; change cursor to pointer */
 .tab-menu > ul > li:hover {
-  background-color: #EBAF3C;
+  background-color: #ebaf3c;
   cursor: pointer;
 }
 
