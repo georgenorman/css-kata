@@ -1,0 +1,66 @@
+{
+  "name": "css-kata",
+  "version": "1.0.0-SNAPSHOT",
+  "title": "CSS Kata",
+  "description": "A simple JavaScript library that helps build web pages with live CSS and HTML examples.",
+  "keywords": [
+    "javascript",
+    "css",
+    "html"
+  ],
+  "homepage": "https://github.com/georgenorman/css-kata",
+  "author": {
+    "name": "George Norman",
+    "url": "http://www.thruzero.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/georgenorman/css-kata.git"
+  },
+  "bugs": "https://github.com/georgenorman/css-kata/issues",
+  "license": {
+    "type": "Apache License, Version 2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.8.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-autoprefixer": "^0.7.3",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-text-replace": "^0.3.11"
+  },
+  "_comment1": "** ----------------------------------------------------------------- **",
+  "_comment2": "** For now, manually manage the order of all files [REVISIT]  **",
+  "_comment3": "** ----------------------------------------------------------------- **",
+  "cssKataFiles": {
+    "cssKataFragmentsJs": [
+      "src/js/genericSupport.js",
+      "src/js/cssKataBase.js"
+    ],
+    "cssKataFragmentsCss": [
+      "src/css/base.css",
+      "src/css/generic/genericTopCornerRibbon.css",
+      "src/css/generic/genericTabMenu.css",
+      "src/css/kata-specific/mainTabMenu.css",
+      "src/css/kata-specific/pageHeader.css",
+      "src/css/kata-specific/pageFooter.css",
+      "src/css/generic/genericContentTransitions.css",
+      "src/css/generic/genericVerticalMenu.css",
+      "src/css/generic/genericModalDialog.css",
+      "src/css/kata-specific/homeTab.css",
+      "src/css/kata-specific/boxTab.css",
+      "src/css/generic/genericTable.css",
+      "src/css/kata-specific/moviesTab.css",
+      "src/css/generic/genericPattern.css",
+      "src/css/kata-specific/mainTabMenuRwd.css",
+      "src/css/kata-specific/pageFooterRwd.css"
+    ],
+    "libJs": [
+    ],
+    "libCss": [
+    ]
+  }
+}

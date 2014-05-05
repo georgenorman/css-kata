@@ -47,6 +47,8 @@ The practice questions incrementally apply CSS to the practice template, resulti
   * [Main Tab Menu](#main-tab-menu)
   * [Footer](#footer)
 
+**[⬆ back to top](#readme)**
+
 ## Corner Ribbon
 
 Write the CSS to add a ribbon, using the `<div class="ribbon-box">` element in the practice template:
@@ -61,6 +63,8 @@ Write the CSS to add a ribbon, using the `<div class="ribbon-box">` element in t
 ![Generic Top Corner Ribbon](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericTopCornerRibbon.png)
 
 See [generic/genericTopCornerRibbon.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTopCornerRibbon.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ## Tab menu
 
@@ -77,6 +81,8 @@ Write the CSS for a generic tab menu that can be used multiple times in the same
 
 See [generic/genericTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTabMenu.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ### ‣ Custom Main Tab Menu
 
 Write the CSS to position the main tab menu at the top of the page (use element with `id="main-menu"`).
@@ -87,6 +93,8 @@ Write the CSS to position the main tab menu at the top of the page (use element 
 ![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_mainTabMenu.png)
 
 See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenu.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ## Header and Footer
 
@@ -99,6 +107,8 @@ See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blo
 
 See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageHeader.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ### ‣ Custom Page Footer
 
 Attach the footer to the bottom of the window. Note: The current solution isn't implemented generically.
@@ -106,6 +116,8 @@ Attach the footer to the bottom of the window. Note: The current solution isn't 
 ![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_pageFooter.png)
 
 See [kata-specific/pageFooter.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooter.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ## Generic Tab Transitions
 
@@ -116,6 +128,8 @@ Enable transitions between the tabs (Home, Box, Movies and About):
 ![Tab Content Transitions](https://github.com/georgenorman/css-kata/raw/master/doc/img/tabContentTransitions.png)
 
 See [generic/genericContentTransitions.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericContentTransitions.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ## Custom Home Tab Content
 
@@ -132,6 +146,8 @@ Write the CSS for a generic vertical menu that can be used multiple times in the
 
 See [generic/genericVerticalMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericVerticalMenu.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ### ‣ Generic Modal Dialog
 
 Write the CSS for a simple modal dialog, using the element with `id="alert"`, in the practice template.
@@ -139,6 +155,8 @@ Write the CSS for a simple modal dialog, using the element with `id="alert"`, in
 ![Modal Dialog](https://github.com/georgenorman/css-kata/raw/master/doc/img/modal-dialog.png)
 
 See [generic/genericModalDialog.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericModalDialog.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ### ‣ Arrange Home Tab Content
 
@@ -148,6 +166,8 @@ Arrange the Home tab content: sidebar on left, loremIpsum on the right.
 
 See [kata-specific/homeTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/homeTab.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ## Box tab
 
 Simple box model example using nested boxes, all centered, with text vertically and horizontally centered.
@@ -155,6 +175,8 @@ Simple box model example using nested boxes, all centered, with text vertically 
 ![Box Model](https://github.com/georgenorman/css-kata/raw/master/doc/img/box-model.png)
 
 See [kata-specific/boxTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/boxTab.css) for  current solution.
+
+**[⬆ back to top](#readme)**
 
 ## Movies tab
 
@@ -171,6 +193,8 @@ Notice how the text of some columns will wrap if the browser width is made too s
 
 See [generic/genericTable.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTable.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ### ‣ Custom Movies Table
 
 Write CSS to specifically style the table inside the `<div id="movies">` element in the practice template.
@@ -185,6 +209,8 @@ This CSS will only be appropriate to this table and can't be reused.
 
 See [kata-specific/moviesTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/moviesTab.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ## Patterns
 
 Write the CSS for a simple CSS pattern, as shown in the example below, targeting the `<header>` and `<footer>` elements from the practice template.
@@ -197,6 +223,8 @@ Write the CSS for a simple CSS pattern, as shown in the example below, targeting
 
 See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericPattern.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ## Responsive
 
 ### ‣ Main Tab Menu
@@ -207,6 +235,8 @@ See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/m
 
 See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenuRwd.css) for  current solution.
 
+**[⬆ back to top](#readme)**
+
 ### ‣ Footer
 
 Attach the footer to the bottom of the *window*, when the browser is sized to 580px or more.
@@ -215,4 +245,46 @@ Attach it to the bottom of the *document*, when sized to more than 580px (to max
 ![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageFooterRwd.png)
 
 See [kata-specific/pageFooterRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooterRwd.css) for  current solution.
+
+**[⬆ back to top](#readme)**
+
+## Building a Release
+
+### Setup
+
+The project's build process uses Node.js and Grunt.
+If you don't have Grunt, you can follow the [Getting Started](http://gruntjs.com/getting-started) guide.
+Next, just do an `npm install` which will install Grunt locally as well as all of the project dependencies:
+
+```bash
+npm install
+```
+
+### Default Build
+
+The default build cleans the target directory and generates the current release.
+
+```bash
+grunt
+```
+
+**[⬆ back to top](#readme)**
+
+## License
+
+Copyright 2014 George Norman
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+**[⬆ back to top](#readme)**
 
