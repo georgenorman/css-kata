@@ -66,6 +66,7 @@ module.exports = function(grunt) {
         }
       },
       options: {
+        preserveComments: 'some',
         sourceMap: true
       }
     },
