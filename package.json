@@ -24,13 +24,15 @@
   },
   "devDependencies": {
     "grunt": "^0.4.4",
-    "grunt-contrib-concat": "^0.4.0",
-    "grunt-contrib-uglify": "^0.4.0",
-    "grunt-contrib-cssmin": "^0.8.0",
-    "grunt-contrib-clean": "^0.5.0",
     "grunt-autoprefixer": "^0.7.3",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-copy": "^0.5.0",
-    "grunt-text-replace": "^0.3.11"
+    "grunt-contrib-cssmin": "^0.8.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-jsdoc": "^0.5.6",
+    "grunt-text-replace": "^0.3.11",
+    "jsdoc": "^3.3.0-alpha8"
   },
   "_comment1": "** ----------------------------------------------------------------- **",
   "_comment2": "** For now, manually manage the order of all files [REVISIT]  **",
@@ -58,9 +60,7 @@
       "src/css/kata-specific/mainTabMenuRwd.css",
       "src/css/kata-specific/pageFooterRwd.css"
     ],
-    "libJs": [
-    ],
-    "libCss": [
-    ]
+    "libJs": [],
+    "libCss": []
   }
 }

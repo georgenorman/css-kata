@@ -2,23 +2,23 @@
  ~ Copyright (c) 2013-2014 George Norman.
  ~ Licensed under the Apache License, Version 2.0 (the "License");
  ~     http://www.apache.org/licenses/LICENSE-2.0
- ~
- ~ --------------------------------------------------------------
- ~ Generic support functions for CSS Kata (may be usable elsewhere).
- ~ --------------------------------------------------------------
- ~
  */
 
+/**
+ * A module that contains generic support functions for CSS Kata, but may also be usable elsewhere.
+ *
+ * @module genericSupportModule
+ */
 var genericSupportModule = (function() {
   "use strict";
 
   return {
 
-    /*
+    /**
      * Display the alert modal dialog.
      *
-     * @param message - the message to display.
-     * @returns false
+     * @param {string} message the message to display.
+     * @returns {boolean} false.
      */
     showAlert: function(message) {
       var alertModalDialog = document.getElementById("alert");
@@ -32,10 +32,10 @@ var genericSupportModule = (function() {
       return false;
     },
 
-    /*
+    /**
      * Hide the alert modal dialog.
      *
-     * @returns false
+     * @returns {boolean} false.
      */
     hideAlert: function() {
       var alertBox = document.getElementById("alert");
@@ -45,15 +45,15 @@ var genericSupportModule = (function() {
       return false;
     },
 
-    /*
-     * Main menu (using the <main> tag as the parent content section.
-     * Shows a subsection of the <main> content section, based on the given menuItem, and updates
+    /**
+     * Handle the <b>main</b> menu selection event (using the &lt;main&gt; tag as the parent content section).
+     * Shows a subsection in the &lt;main&gt; content section, based on the given menuItem, and then updates
      * the menu to reflect the new selection.
-     *
+     *<p>
      * Call this via onclick, not href, so that when passing in the 'this' object, it's set to the element that was clicked.
      *
-     * @param {type} menuItem - the menu item that was clicked (selected)
-     * @returns false
+     * @param {object} menuItem the menu item that was clicked (selected)
+     * @returns {boolean} false.
      */
     handleMainMenuSelection: function(menuItem) {
       var mainContent = document.getElementsByTagName("main")[0];
@@ -61,12 +61,29 @@ var genericSupportModule = (function() {
       return this.handleMenuSelection(menuItem, mainContent);
     },
 
+    /**
+     * Handle <b>any</b> menu selection event, using the given parentContentSectionId to identify the parent content section.
+     * Shows a subsection in the specified content section, based on the given menuItem, and then updates
+     * the menu to reflect the new selection.
+     *<p>
+     * Call this via onclick, not href, so that when passing in the 'this' object, it's set to the element that was clicked.
+     *
+     * @param {object} menuItem
+     * @param {string} parentContentSectionId
+     * @returns {boolean}
+     */
     handleMenuSelectionById: function(menuItem, parentContentSectionId) {
       var mainContent = document.getElementById(parentContentSectionId);
 
       return this.handleMenuSelection(menuItem, mainContent);
     },
 
+    /**
+     *
+     * @param {object} menuItem
+     * @param {object} mainContent
+     * @returns {boolean}
+     */
     handleMenuSelection: function(menuItem, mainContent) {
       var i, mainSections, liElements, secId;
 
@@ -96,8 +113,12 @@ var genericSupportModule = (function() {
       return false;
     },
 
-    /*
+    /**
      * Redirect to the Apple map page and display the area defined by the given lat lng points.
+     *
+     * @param {number} lat the Latitude to display
+     * @param {number} lng the Longitude to display
+     * @returns {undefined}
      */
     gotoMap: function(lat, lng) {
       // Options:
@@ -113,6 +134,13 @@ var genericSupportModule = (function() {
     }
   };
 
+  /**
+   * Return the first child element, from the given parentNode, that has the given tagName.
+   *
+   * @param {object} parentNode node to search for tag
+   * @param {string} tagName name of tag/element to find
+   * @returns {object} child element with given tagName
+   */
   function getFirstChildElementByTagName( parentNode, tagName ) {
     var result = null;
 
@@ -126,6 +154,11 @@ var genericSupportModule = (function() {
     return result;
   }
 
+  /**
+   * Remove all child nodes from the given parentNode.
+   *
+   * @param {object} parentNode the node that is to have all child nodes removed.
+   */
   function removeAllChildNodes( parentNode ) {
     while (parentNode.hasChildNodes()) {
       parentNode.removeChild( parentNode.lastChild );
@@ -133,18 +166,21 @@ var genericSupportModule = (function() {
   }
 
   /**
-   * Private method to set the style of an element.
+   * Set the style of an element that has the given id.
    *
-   * @param id of element
-   * @param attrName name of style attribute to set
-   * @param attrValue
+   * @param {string} id id of element to be styled
+   * @param {string} attrName name of style attribute to set
+   * @param {string} attrValue new attribute value to set
    */
   function setStyleByElementId(id, attrName, attrValue) {
     document.getElementById(id).style[attrName] = attrValue;
   }
 
   /**
-   * Private method to replace the CSS class of an element.
+   * Replace the CSS class of an element that has the given id.
+   *
+   * @param {string} id id of element
+   * @param {string} classValue new CSS value to set
    */
   function setClassByElementId(id, classValue) {
     document.getElementById(id).setAttribute('class', classValue);

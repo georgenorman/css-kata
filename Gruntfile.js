@@ -117,6 +117,15 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['src/img/logo/*'], dest: 'releases/<%= pkg.version %>/img/logo/'}
         ]
       }
+    },
+
+    jsdoc : {
+      dist : {
+        src: ['src/js/*.js', 'test/*.js', 'src/js/README.md'],
+        options: {
+          destination: 'doc'
+        }
+      }
     }
   });
 
@@ -129,13 +138,15 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-jsdoc');
 
   // register sub-tasks
   grunt.registerTask('assemble-fragments', ['concat:cssKataFragments', 'concat:libFragments']);
   grunt.registerTask('assemble-final', ['concat:cssKataCssFinal', 'concat:cssKataJsFinal']);
+  grunt.registerTask('docgen', ['jsdoc']);
 
   // register main task(s)
-  grunt.registerTask('release', ['assemble-fragments', 'assemble-final', 'uglify:cssKata', 'autoprefixer:cssKata', 'cssmin:cssKata', 'replace:cssKata', 'copy:release']);
+  grunt.registerTask('release', ['assemble-fragments', 'assemble-final', 'uglify:cssKata', 'autoprefixer:cssKata', 'cssmin:cssKata', 'replace:cssKata', 'copy:release', 'docgen']);
 
   // register default task
   grunt.registerTask('default', ['clean', 'release']);
