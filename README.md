@@ -60,7 +60,7 @@ Write the CSS to add a ribbon, using the `<div class="ribbon-box">` element in t
 * Ensure that the browser does not add a horizontal scrollbar.
 * Ensure that elements beneath the ribbon's region, receive mouse events (e.g., any part of the tab menu covered by the ribbon, must receive hover as well as click events).
 
-![Generic Top Corner Ribbon](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericTopCornerRibbon.png)
+![Generic Top Corner Ribbon](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/genericTopCornerRibbon.png)
 
 See [generic/genericTopCornerRibbon.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTopCornerRibbon.css) for  current solution.
 
@@ -77,7 +77,7 @@ Write the CSS for a generic tab menu that can be used multiple times in the same
 * Set the active tab's text color to #555 and its background color to #fff.
 * Give the first tab a round corner.
 
-![Generic Tab Menu](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericTabMenu.png)
+![Generic Tab Menu](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/genericTabMenu.png)
 
 See [generic/genericTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTabMenu.css) for  current solution.
 
@@ -90,7 +90,7 @@ Write the CSS to position the main tab menu at the top of the page (use element 
 * Move the main tab menu to the top of the page and nudge it to the right, to make room for the header's Title.
 * Make all header tabs the same width.
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_mainTabMenu.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/kata-specific_mainTabMenu.png)
 
 See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenu.css) for  current solution.
 
@@ -103,7 +103,7 @@ See [kata-specific/mainTabMenu.css](https://github.com/georgenorman/css-kata/blo
 * Push the main content down, slightly, away from the header.
 * Add a header "icon" using a font (e.g., unicode "\2666") and set its color to #069459.
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_pageHeader.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/kata-specific_pageHeader.png)
 
 See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageHeader.css) for  current solution.
 
@@ -113,7 +113,7 @@ See [kata-specific/pageHeader.css](https://github.com/georgenorman/css-kata/blob
 
 Attach the footer to the bottom of the window. Note: The current solution isn't implemented generically.
 
-![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/kata-specific_pageFooter.png)
+![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/kata-specific_pageFooter.png)
 
 See [kata-specific/pageFooter.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooter.css) for  current solution.
 
@@ -125,7 +125,7 @@ Enable transitions between the tabs (Home, Box, Movies and About):
 
 * Show the content of the currently active tab and perform a transition to the newly selected tab's content.
 
-![Tab Content Transitions](https://github.com/georgenorman/css-kata/raw/master/doc/img/tabContentTransitions.png)
+![Tab Content Transitions](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/tabContentTransitions.png)
 
 See [generic/genericContentTransitions.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericContentTransitions.css) for  current solution.
 
@@ -142,7 +142,7 @@ Write the CSS for a generic vertical menu that can be used multiple times in the
 * Use color #ebaf3c for highlight (on hover).
 * Make sure the entire tab area is a click-target (not just the item's anchor).
 
-![Generic Vertical Menu](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericVerticalMenu.png)
+![Generic Vertical Menu](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/genericVerticalMenu.png)
 
 See [generic/genericVerticalMenu.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericVerticalMenu.css) for  current solution.
 
@@ -152,7 +152,7 @@ See [generic/genericVerticalMenu.css](https://github.com/georgenorman/css-kata/b
 
 Write the CSS for a simple modal dialog, using the element with `id="alert"`, in the practice template.
 
-![Modal Dialog](https://github.com/georgenorman/css-kata/raw/master/doc/img/modal-dialog.png)
+![Modal Dialog](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/modal-dialog.png)
 
 See [generic/genericModalDialog.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericModalDialog.css) for  current solution.
 
@@ -162,7 +162,7 @@ See [generic/genericModalDialog.css](https://github.com/georgenorman/css-kata/bl
 
 Arrange the Home tab content: sidebar on left, loremIpsum on the right.
 
-![Home Tab Content](https://github.com/georgenorman/css-kata/raw/master/doc/img/arrangeHomeContent.png)
+![Home Tab Content](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/arrangeHomeContent.png)
 
 See [kata-specific/homeTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/homeTab.css) for  current solution.
 
@@ -172,7 +172,7 @@ See [kata-specific/homeTab.css](https://github.com/georgenorman/css-kata/blob/ma
 
 Simple box model example using nested boxes, all centered, with text vertically and horizontally centered.
 
-![Box Model](https://github.com/georgenorman/css-kata/raw/master/doc/img/box-model.png)
+![Box Model](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/box-model.png)
 
 See [kata-specific/boxTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/boxTab.css) for  current solution.
 
@@ -189,7 +189,7 @@ Notice how the text of some columns will wrap if the browser width is made too s
 * Give the header a dark background with white (or light) text and vertical separators.
 * Add zebra-stripes to the table body and add gray vertical separators to each cell.
 
-![Generic Table](https://github.com/georgenorman/css-kata/raw/master/doc/img/genericTable.png)
+![Generic Table](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/genericTable.png)
 
 See [generic/genericTable.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericTable.css) for  current solution.
 
@@ -205,7 +205,7 @@ This CSS will only be appropriate to this table and can't be reused.
 * Center-justify the 'Rating' column.
 * Add horizontal scrollbars to the table, for when the width of the browser becomes less than 480px (for phones), otherwise no scrollbars should be displayed.
 
-![Custom Movies Table](https://github.com/georgenorman/css-kata/raw/master/doc/img/customMoviesTable.png)
+![Custom Movies Table](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/customMoviesTable.png)
 
 See [kata-specific/moviesTab.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/moviesTab.css) for  current solution.
 
@@ -219,7 +219,7 @@ Write the CSS for a simple CSS pattern, as shown in the example below, targeting
 * Color one set of circles #111 and the second set #222.
 * Make the background color #333
 
-![Simple Pattern](https://github.com/georgenorman/css-kata/raw/master/doc/img/simplePattern.png)
+![Simple Pattern](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/simplePattern.png)
 
 See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/master/src/css/generic/genericPattern.css) for  current solution.
 
@@ -231,7 +231,7 @@ See [generic/genericPattern.css](https://github.com/georgenorman/css-kata/blob/m
 
 * Move the main tab menu below the header title when the browser size is less than 539px (for small screens). Use a a quick transition (e.g., 0.35 seconds).
 
-![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/mainTabMenuRwd.png)
+![Page Header Layout](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/mainTabMenuRwd.png)
 
 See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/mainTabMenuRwd.css) for  current solution.
 
@@ -242,7 +242,7 @@ See [kata-specific/mainTabMenuRwd.css](https://github.com/georgenorman/css-kata/
 Attach the footer to the bottom of the *window*, when the browser is sized to 580px or more.
 Attach it to the bottom of the *document*, when sized to more than 580px (to maximize the available content space on small screens).
 
-![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/doc/img/pageFooterRwd.png)
+![Page Footer Layout](https://github.com/georgenorman/css-kata/raw/master/readme_assets/img/pageFooterRwd.png)
 
 See [kata-specific/pageFooterRwd.css](https://github.com/georgenorman/css-kata/blob/master/src/css/kata-specific/pageFooterRwd.css) for  current solution.
 
