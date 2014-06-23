@@ -10,5 +10,5 @@ Using that technique, instead of JavaScript, is on the TODO list.
 
 The modules:
 
-* **genericSupportModule**: Contains generic support functions that can be used in other projects as well as CSS Kata.
-* **cssKataBaseModule**: Contains support functions specific to CSS Kata and wouldn't be useful to any other project.
+* **[cssKataBaseModule](module-cssKataBaseModule.html)**: Contains support functions specific to CSS Kata and wouldn't be useful to any other project.
+* **[genericSupportModule](module-genericSupportModule.html)**: Contains generic support functions that can be used in other projects as well as CSS Kata.
