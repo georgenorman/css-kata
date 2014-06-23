@@ -123,7 +123,7 @@ module.exports = function(grunt) {
       dist : {
         src: ['src/js/*.js', 'test/*.js', 'src/js/README.md'],
         options: {
-          destination: 'doc'
+          destination: 'releases/<%= pkg.version %>/jsdoc'
         }
       }
     }
