@@ -12,6 +12,9 @@
 var genericSupportModule = (function() {
   "use strict";
 
+  // see http://alistapart.com/article/getoutbindingsituations
+  var self; // can lose this (e.g., on event-registration/method-assignment; on event handling, where this is reassigned to active object; on etc).
+
   return {
 
     /**
@@ -48,49 +51,47 @@ var genericSupportModule = (function() {
     /**
      * Handle the <b>main</b> menu selection event (using the &lt;main&gt; tag as the parent content section).
      * Shows a subsection in the &lt;main&gt; content section, based on the given menuItem, and then updates
-     * the menu to reflect the new selection.
-     *<p>
-     * Call this via onclick, not href, so that when passing in the 'this' object, it's set to the element that was clicked.
+     * the menu to reflect the new selection (see handleMenuSelectionById).
      *
-     * @param {object} menuItem the menu item that was clicked (selected)
      * @returns {boolean} false.
      */
-    handleMainMenuSelection: function(menuItem) {
+    handleMainMenuSelection: function() {
       var mainContent = document.getElementsByTagName("main")[0];
 
-      return this.handleMenuSelection(menuItem, mainContent);
+      return self.handleMenuSelection(this, mainContent);
     },
 
     /**
-     * Handle <b>any</b> menu selection event, using the given parentContentSectionId to identify the parent content section.
-     * Shows a subsection in the specified content section, based on the given menuItem, and then updates
+     * Handle a menu selection event, that hides and shows subsections of a parent content section, and updates
      * the menu to reflect the new selection.
-     *<p>
-     * Call this via onclick, not href, so that when passing in the 'this' object, it's set to the element that was clicked.
      *
-     * @param {object} menuItem
-     * @param {string} parentContentSectionId
+     * @param {object} menuItem the selected menu item.
+     * @param {string} parentContentSectionId the ID of the parent that contains subsections to be shown or hidden, based on the menu selection.
+     *
      * @returns {boolean}
      */
     handleMenuSelectionById: function(menuItem, parentContentSectionId) {
-      var mainContent = document.getElementById(parentContentSectionId);
+      var parentContentElement = document.getElementById(parentContentSectionId);
 
-      return this.handleMenuSelection(menuItem, mainContent);
+      return self.handleMenuSelection(menuItem, parentContentElement);
     },
 
     /**
+     * Handle a menu selection event, that hides and shows subsections of a parent content section, and updates
+     * the menu to reflect the new selection.
      *
-     * @param {object} menuItem
-     * @param {object} mainContent
-     * @returns {boolean}
+     * @param {object} menuItem the selected menu item.
+     * @param {string} parentContentElement the parent element that contains subsections to be shown or hidden, based on the menu selection.
+     *
+     * @returns {boolean} false
      */
-    handleMenuSelection: function(menuItem, mainContent) {
+    handleMenuSelection: function(menuItem, parentContentElement) {
       var i, mainSections, liElements, secId;
 
       // hide all content sub-sections
-      mainSections = mainContent.getElementsByTagName("section"); // @-@:p0 is it possible to retrieve only immediate children?
+      mainSections = parentContentElement.getElementsByTagName("section"); // @-@:p0 is it possible to retrieve only immediate children?
       for (i = 0; i < mainSections.length; i++) {
-        if (mainSections[i].parentNode === mainContent) {
+        if (mainSections[i].parentNode === parentContentElement) {
           mainSections[i].setAttribute('class', "hidden-content");
         }
       }
@@ -131,8 +132,19 @@ var genericSupportModule = (function() {
       // see: https://developer.apple.com/library/ios/featuredarticles/iPhoneURLScheme_Reference/Articles/MapLinks.html
       //
       document.location = "http://maps.apple.com/?hl=en&q="+lat+","+lng+"&t=m&z=17";
+    },
+
+    /**
+     * Init function (basic module setup).
+     */
+    init: function() {
+      self = this;
     }
   };
+
+  // --------------------------------------------------------------
+  // private functions
+  // --------------------------------------------------------------
 
   /**
    * Return the first child element, from the given parentNode, that has the given tagName.

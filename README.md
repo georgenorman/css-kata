@@ -270,6 +270,12 @@ grunt
 
 **[⬆ back to top](#readme)**
 
+## JSDoc
+
+[CSS Kata JSDocs](http://www.thruzero.com/pages/jcat3/css-kata-jsdoc/index.html)
+
+**[⬆ back to top](#readme)**
+
 ## License
 
 Copyright 2014 George Norman

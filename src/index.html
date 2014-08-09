@@ -34,16 +34,16 @@
       }
     </script>
   </head>
-  <body onload="cssKataBaseModule.handleStarRatings();">
+  <body onload="cssKataBaseModule.init();">
     <!-- Page Header -->
     <header>
       <h1><i></i>CSS Kata</h1>
       <nav id="main-menu" class="tab-menu">
         <ul>
-          <li class="active"><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Home</a></li>
-          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Box</a></li>
-          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">Movies</a></li>
-          <li><a href="#" onclick="genericSupportModule.handleMainMenuSelection(this);">About</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Box</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </nav>
     </header>
@@ -58,7 +58,7 @@
     <!-- Alert - modal dialog -->
     <div id="alert" class="modal-overlay dialog">
       <div>
-        <header>Alert <a href="#" title="Close" onclick="genericSupportModule.hideAlert(); return false;">X</a></header>
+        <header>Alert <a href="#" title="Close">X</a></header>
         <p>*This will be replaced*</p>
       </div>
     </div>
@@ -70,19 +70,19 @@
         <section id="sidebar">
           <nav class="side-menu">
             <ul>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item1</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item2</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item3</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">Item4</a>
+              <li><a href="#">Item1</a>
+              <li><a href="#">Item2</a>
+              <li><a href="#">Item3</a>
+              <li><a href="#">Item4</a>
             </ul>
           </nav>
 
           <nav class="side-menu">
             <ul>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemA</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemB</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemC</a>
-              <li><a href="#" onclick="cssKataBaseModule.showClickedMenu(this);return false;">ItemD</a>
+              <li><a href="#">ItemA</a>
+              <li><a href="#">ItemB</a>
+              <li><a href="#">ItemC</a>
+              <li><a href="#">ItemD</a>
             </ul>
           </nav>
         </section>
