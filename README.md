@@ -248,6 +248,13 @@ See [kata-specific/pageFooterRwd.css](https://github.com/georgenorman/css-kata/b
 
 **[⬆ back to top](#readme)**
 
+## Testing Locally
+
+Just cd to the project directory and open the ```src/index.html``` file in your browser.
+The CSS and JavaScript files will be accessed in a non-minified and non-amalgamated way.
+
+Alternatively, you can perform a build, which will optimize the CSS and JavaScript files for deployment.
+
 ## Building a Release
 
 ### Setup
