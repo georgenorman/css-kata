@@ -143,10 +143,12 @@ module.exports = function(grunt) {
   // register sub-tasks
   grunt.registerTask('assemble-fragments', ['concat:cssKataFragments', 'concat:libFragments']);
   grunt.registerTask('assemble-final', ['concat:cssKataCssFinal', 'concat:cssKataJsFinal']);
-  grunt.registerTask('docgen', ['jsdoc']);
+  grunt.registerTask('docs', ['jsdoc']);
 
   // register main task(s)
-  grunt.registerTask('release', ['clean', 'assemble-fragments', 'assemble-final', 'uglify:cssKata', 'autoprefixer:cssKata', 'cssmin:cssKata', 'replace:cssKata', 'copy:release', 'docgen']);
+  grunt.registerTask('build', ['assemble-fragments', 'assemble-final', 'uglify:cssKata', 'autoprefixer:cssKata', 'cssmin:cssKata', 'replace:cssKata', 'copy:release']);
+
+  grunt.registerTask('release', ['clean', 'build', 'docs']);
 
   // register default task
   grunt.registerTask('default', ['release']);
