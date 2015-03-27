@@ -21,8 +21,8 @@ The practice questions incrementally apply CSS to the practice template, resulti
 
 ## Kata Demo
 
-* [Raw Template - sans CSS](http://www.thruzero.com/kata-demos/css-kata/index.html?css=false)
-* [Raw Template - with CSS](http://www.thruzero.com/kata-demos/css-kata/index.html)
+* [Raw Template - sans CSS](http://www.thruzero.com/pages/jcat3/css-kata/index.html?css=false)
+* [Raw Template - with CSS](http://www.thruzero.com/pages/jcat3/css-kata/index.html)
 
 ## Kata
 
